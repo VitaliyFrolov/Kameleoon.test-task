@@ -71,7 +71,7 @@ export const Table: React.FC<TableProps> = ({ sites, tests, onSort, sortKey, sor
                 <div className={styles.table__title}>{""}</div>
             </div>
             <div className={styles.table__body}>
-                {tests.map((test) => {
+                {tests.map((test, index) => {
                     const site = sites.find((s) => s.id === test.siteId);
 
                     return (
@@ -79,6 +79,7 @@ export const Table: React.FC<TableProps> = ({ sites, tests, onSort, sortKey, sor
                             to={test.status === "ONLINE" ? `/results/${test.id}` : `/finalize/${test.id}`}
                             className={classNames(styles.table__row, getRowClass(test.status))}
                             key={test.id}
+                            tabIndex={index + 1} // Добавляем уникальный tabIndex
                         >
                             <div className={styles.table__name}>{test.name}</div>
                             <div className={styles.table__type}>{test.type}</div>

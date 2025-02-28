@@ -158,3 +158,8 @@
 .table__row_draft {
   border-left: 4px solid #C2C2FF;
 }
+
+.table__row:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007bff;
+}
