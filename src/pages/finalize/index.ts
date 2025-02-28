@@ -1,0 +1,1 @@
+export { FinalizePage } from './ui/FinalizePage';

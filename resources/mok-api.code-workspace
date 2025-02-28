@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "mok-api",
+			"path": "../mok-api"
+		},
+		{
+			"name": "kameleoon-test-task",
+			"path": "../../kameleoon-test-task"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}

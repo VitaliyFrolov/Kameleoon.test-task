@@ -1,0 +1,160 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.table__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+
+  :nth-child(1) {
+    margin-left: 0;
+  }
+}
+
+.table__title {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: uppercase;
+  color: #999999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  margin-left: 5px;
+}
+
+.table__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.table__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease-in-out;
+  border-left: 4px solid var(--row-border-color);
+  position: relative;
+  flex: 1;
+  gap: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 0px #00000026;
+  }
+}
+
+.table__row > div {
+  flex: 1;
+}
+
+.table__name,
+.table__type,
+.table__status,
+.table__site {
+  font-size: 13px;
+  line-height: 14px;
+  color: #5C5C5C;
+}
+
+.table__name {
+  font-weight: 500;
+}
+
+.table__type {
+  font-weight: 400;
+}
+
+.table__status {
+  font-weight: 400;
+
+  & span {
+    font-weight: 400;
+  }
+}
+
+.table__site {
+  font-weight: 400;
+}
+
+.table__buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table__button {
+  padding: 5px;
+  max-width: 95px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.table__button_green {
+  background-color: #2EE5AC;
+}
+
+.table__button_gray {
+  background-color: #7D7D7D;
+}
+
+.sortIcon {
+  transition: transform 0.2s ease-in-out;
+  vertical-align: middle;
+}
+
+.sortIcon_desc {
+  transform: rotate(180deg);
+}
+
+.table__status_online {
+  color: #1BDA9D;
+}
+
+.table__status_paused {
+  color: #FF8346;
+}
+
+.table__status_stopped {
+  color: #FE4848;
+}
+
+.table__status_draft {
+  color: #5C5C5C;
+}
+
+.table__row_online {
+  border-left: 4px solid #E14165; 
+}
+
+.table__row_paused {
+  border-left: 4px solid #C2C2FF;
+}
+
+.table__row_stopped {
+  border-left: 4px solid #8686FF;
+
+}
+
+.table__row_draft {
+  border-left: 4px solid #C2C2FF;
+}

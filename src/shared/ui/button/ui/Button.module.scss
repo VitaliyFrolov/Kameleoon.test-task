@@ -1,0 +1,23 @@
+.button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.theme-filled {
+    background: #EAEAEA;
+    padding: 15px 21px;
+
+    .caption {
+        text-decoration: none;
+    }
+}
+
+.iconPosition-left {
+    order: 0;
+}
+
+.iconPosition-right {
+    order: 1;
+}
